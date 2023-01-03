@@ -4,20 +4,20 @@
 	set more off
 	mat drop _all
 	
-	
 ***********************************************
 
-gen double      newdate = mdy( month_m , day_m , year_m )
-		quietly replace newdate = dhms(newdate , hr_m  , min_m , sec_m )
-		gen date_time = string( newdate ,"%tc")
-		gen double event_m = clock( date_time ,"DMY hms")
+gen double newdate = mdy( month_m , day_m , year_m )
+quietly replace newdate = dhms(newdate , hr_m  , min_m , sec_m )
 		
-		di td(01jan2020) // 21915
-		di td(01nov2020) // 22220
+gen date_time = string( newdate ,"%tc")
+gen double event_m = clock( date_time ,"DMY hms")
+		
+di td(01jan2020) // 21915
+di td(01nov2020) // 22220
 
 ***********************************************
 
-    * Current time and date *
+* Current time and date *
 
 	di c(current_date)
 	14 Jun 2021
@@ -49,4 +49,4 @@ gen double      newdate = mdy( month_m , day_m , year_m )
 ***********************************************
 
 ```
-
+![image](https://user-images.githubusercontent.com/48903494/210287656-7fd29f5a-1afc-44f4-81d8-692e34f31319.png)
