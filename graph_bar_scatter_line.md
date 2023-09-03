@@ -45,6 +45,8 @@
 <br>
 <br>
 
+![graph1](https://github.com/khhassan/sample_codes/assets/48903494/12a572d6-c1b1-433e-a9ee-dfccb48dbec2)
+
 
 
 ```
