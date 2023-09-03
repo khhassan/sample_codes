@@ -12,6 +12,8 @@ global address    = "D:\MALL_ROAD_2018"
 * Matrices
 + Locals
 
+> [!WARNING]
+> Use at your own risk.
 
 You can upload assets like images by dragging and dropping, selecting from a file browser, or pasting. 
 You can upload assets to issues, pull requests, comments, and .md files in your repository.
