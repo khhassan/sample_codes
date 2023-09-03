@@ -2,7 +2,7 @@
 * Data sample for graph
 	
 	input 	var1  var2
-	13  	9
+	13  	        9
 	13		7
 	12		1
 	12		2
@@ -13,7 +13,7 @@
 	1		5
 	2		9
 	2		1
-	5	  1
+	5	        1
 	5		1
 	5		9
 	5		1
@@ -22,7 +22,7 @@
 	1		1
 	1		6
 	7		4
-	6	  1
+	6	        1
 	5		1
 	9		6
 	1		1
@@ -36,11 +36,11 @@
 	  
 	  twoway (histogram var1 , freq start(0) width(1) color(green)) ///
                 (histogram var2 , freq start(0) width(1) fcolor(none) lcolor(black)), ///
-	            xline(5) ///
-	            legend(order(1 "1992" 2 "2013" )) xtitle("DN values") ///
-				 title("Camera violations per month w.r.t time" "$v")    ///
-				 note("Note: Violations identified by PSCA camera") ///
-				 plotregion(fcolor(white))  graphregion(fcolor(white) style(none) color(gs16)) ylab(,nogrid) 
+                 xline(5) ///
+                 legend(order(1 "1992" 2 "2013" )) xtitle("DN values") ///
+		title("Camera violations per month w.r.t time" "$v")    ///
+		note("Note: Violations identified by PSCA camera") ///
+		plotregion(fcolor(white))  graphregion(fcolor(white) style(none) color(gs16)) ylab(,nogrid) 
 	 graph export "C:\Users\hassa\Dropbox (Personal)\Satellite Imagery KP Pak Project\Data\Outputs\Histogram_pesh.png", replace width(3000) height(2200)
 
 ```
