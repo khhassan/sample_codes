@@ -6,15 +6,7 @@ I have uploaded some Stata codes
 gen = c
 
 global address    = "D:\MALL_ROAD_2018"
-		global regsave_12 = "D:\MALL_ROAD_2018\regressions\regsave_12_interact"
-	
-	   	cd "$regsave_12"
-		
-		use IV_data.dta , clear
-	
-		global xvar   "EW covid_day covid_day#road_numeric" // interaction terms added, covid_day excluded
-		global xvar2  "EW covid_day covid_day##i.road_numeric" // interaction terms added, covid_day excluded
-		
+
 ```
 
 
