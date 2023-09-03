@@ -1,3 +1,5 @@
+```do
+
 ***********************************************
   
 	foreach i of numlist 1/58 {
@@ -90,3 +92,5 @@ tostring var, gen(new_var)  format(%5.0f) force  //  make numeric to string with
 
   
 ***********************************************
+
+```
