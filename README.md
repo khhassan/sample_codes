@@ -1,13 +1,6 @@
 # Sample Stata codes
 
 I have uploaded some Stata codes 
-
-```do
-gen = c
-
-global address    = "D:\MALL_ROAD_2018"
-
-```
 - Loops
 * Matrices
 + Locals
