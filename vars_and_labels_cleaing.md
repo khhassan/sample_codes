@@ -107,4 +107,8 @@ tostring var, gen(new_var)  format(%5.0f) force  //  make numeric to string with
 	
 	***********************************************
 
+tostring var, gen(new_var)  format(%5.0f) force  //  make numeric to string with rounded to 0 decimal place
+
+**************************************************
+
 ```
