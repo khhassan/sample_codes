@@ -35,12 +35,12 @@
 	
 	
 	twoway ( bar one_var group_month_year if inrange(group_month_year,4,25), yaxis(2)  ylabel(#3, axis(2)) ytitle(Number, axis(2)) xtitle(month)  fintensity(inten30)  ) ///
-	           ( scatter growth_cam_vio group_month_year if inrange(group_month_year,4,25),  connect(l) yaxis(1) ytitle(Percent, axis(1)) ) ///
-	           ( lfit growth_cam_vio group_month_year if inrange(group_month_year,4,25)) ///
-			   , legend( order(1 "# violations" 2 "Growth rate" 3 "Fitted growth line")) ///
-					 title("Camera violations per month w.r.t time" "$v")    ///
-					 note("Note: Violations identified by PSCA camera") ///
-					 plotregion(fcolor(white))  graphregion(fcolor(white) style(none) color(gs16)) ylab(,nogrid)
+	        ( scatter growth_cam_vio group_month_year if inrange(group_month_year,4,25),  connect(l) yaxis(1) ytitle(Percent, axis(1)) ) ///
+               ( lfit growth_cam_vio group_month_year if inrange(group_month_year,4,25)) ///
+               , legend( order(1 "# violations" 2 "Growth rate" 3 "Fitted growth line")) ///
+		 title("Camera violations per month w.r.t time" "$v")    ///
+		 note("Note: Violations identified by PSCA camera") ///
+		plotregion(fcolor(white))  graphregion(fcolor(white) style(none) color(gs16)) ylab(,nogrid)
 
 ```
 
