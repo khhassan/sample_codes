@@ -32,5 +32,16 @@ local dep `r(list)'
 
 **************************************************
 
+* local in a global
+
+		foreach i of numlist 1/5 {
+		 global yxiv`i'  "speed echalan EW predict_`i'" 
+		 }		
+		 
+	 foreach v of numlist 1/5 {	 
+	${yxiv`v'} 
+     }
+
+**************************************************
 
 ```
