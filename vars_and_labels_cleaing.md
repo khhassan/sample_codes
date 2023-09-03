@@ -92,5 +92,13 @@ tostring var, gen(new_var)  format(%5.0f) force  //  make numeric to string with
 
   
 ***********************************************
+	
+	* removes "a_" from all variables names
+	
+	* a_varname ---> varname
+	
+	renpfix a_ 
+	
+	***********************************************
 
 ```
