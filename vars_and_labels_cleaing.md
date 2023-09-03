@@ -50,6 +50,12 @@
    replace plate_m2 = subinstr(plate_m2, ""`n''"", "",.)
  }
    ***********************************************
+
+        ssc install egenmore
+	egen N = sieve( string_variable ), char(-.0123456789) // take out these character from string variable
+	destring  N, replace
+
+**************************************************
    
  gen postcode = substr( plate_m ,1,length( plate_m )-1) if inrange(substr( plate_m ,-1,1), "a","z")
  
