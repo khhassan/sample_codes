@@ -39,14 +39,32 @@ format date2 %tdDay
 gen date3 = mdy( month , day , year ) //   two date component : day, month
 format date3 %tdd_m
 		
-gen dow = dow( date2 ) // Day of week:  0 = Sunday , 1 = Monday and so on 
+gen dow = dow( date2 ) // Day of week:  0 = Sunday , 1 = Monday and so on
+
+***********************************************
 		
 la define dow 0 "Sunday" 1 "Monday" 2 "Tuesday" 3 "Wednesday" 4 "Thursday" 5 "Friday" 6 "Saturday" , modify
 la values dow dow
 		
 la define month 1 "Jan" 2 "Feb" 3 "Mar" 4  "Apr" 5 "May" 6 "Jun" 7 "Jul" 8 "Aug" 9 "Sep" 10 "Oct" 11 "Nov" 12 "Dec" , modify
 
-***********************************************
+la define month_encode 1 "January" 2 "February" 3 "March" 4  "April" 5 "May" 6 "June" 7 "July" 8 "August" 9 "September" 10 "October" 11 "November" 12 "December" , modify
+la values month_encode month_encode
+
+gen month_encode = 1 if month == "January"
+replace month_encode = 2 if month == "February"
+replace month_encode = 3 if month == "March"
+replace month_encode = 4 if month == "April"
+replace month_encode = 5 if month == "May"
+replace month_encode = 6 if month == "June"
+replace month_encode = 7 if month == "July"
+replace month_encode = 8 if month == "August"
+replace month_encode = 9 if month == "September" 
+replace month_encode = 10 if month == "October"
+replace month_encode = 11 if month =="November"
+replace month_encode = 12 if month =="December"
+
+
 
 ```
 ![image](https://user-images.githubusercontent.com/48903494/210287656-7fd29f5a-1afc-44f4-81d8-692e34f31319.png)
