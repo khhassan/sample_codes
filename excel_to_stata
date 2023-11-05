@@ -54,5 +54,4 @@ clear all
 	keep if keeper == 1
 	sa bgum18_EW.dta , replace
 	restore 
-
 ```
