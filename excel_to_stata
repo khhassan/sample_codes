@@ -55,9 +55,4 @@ clear all
 	sa bgum18_EW.dta , replace
 	restore 
 
-
-
-
-
-
 ```
